@@ -9,15 +9,20 @@
     "incremental": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
+    "types": ["node", "express"],
+    "module": "CommonJS",
     "resolveJsonModule": true,
-    "strict": false,
+    "strict": true,
     "target": "es5",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "outDir": "../../apps/server/dist",
-    "rootDir": "../../apps/server"
+    "rootDir": "../../apps/server",
+    "baseUrl": "../../apps/server/src",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }

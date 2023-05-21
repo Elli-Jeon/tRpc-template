@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# node js
+dist
+
 # misc
 .DS_Store
 *.pem
