@@ -9,6 +9,7 @@
     "dist/*"
   ],
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "@trpc/server": "^10.27.1",
     "cors": "^2.8.5",
