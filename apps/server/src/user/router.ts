@@ -1,9 +1,9 @@
 import { z } from "zod";
 
-import { router, publicProcedure } from "@/trpc.js";
+import { router, publicProcedure } from "../trpc.js";
 
-import { users } from "@/user/db.js";
-import { IUser } from "@/user/types.js";
+import { users } from "./db.js";
+import { IUser } from "./types.js";
 
 export const userRouter = router({
   getUsers: publicProcedure.query(() => users),

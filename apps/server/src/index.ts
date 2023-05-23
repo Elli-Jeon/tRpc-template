@@ -3,7 +3,7 @@ import express from "express";
 import * as trpcExpress from "@trpc/server/adapters/express";
 
 import { appRouter } from "./router.js";
-import { createContext } from "@/context.js";
+import { createContext } from "./context.js";
 
 const app = express();
 
