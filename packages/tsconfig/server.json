@@ -3,23 +3,25 @@
   "display": "server",
   "extends": "./base.json",
   "compilerOptions": {
-    "allowJs": true,
     "declaration": false,
     "declarationMap": false,
     "incremental": true,
     "types": ["node", "express"],
-    "module": "CommonJS",
     "resolveJsonModule": true,
     "strict": true,
     "target": "es6",
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "outDir": "../../apps/server/dist",
-    "rootDir": "../../apps/server",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "baseUrl": "../../apps/server/src",
+    "outDir": "../../apps/server/dist",
     "paths": {
       "@/*": ["*"]
     }
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalResolver": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
